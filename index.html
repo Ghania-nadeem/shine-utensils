@@ -13,57 +13,60 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/cardf.css">
   </head>
   <body>
 
-    <nav class="navbar ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/logo.png"
-            height="90vh" alt></a>
+    
+  <nav class="navbar ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo.png"
+          height="90vh" alt></a>
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search"
-            aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+      <form class="d-flex col-4" role="search">
+        <input class="form-control me-2 border border-0 border-bottom border-dark " type="search" placeholder="Search"
+          aria-label="Search">
+          <i class="fa fa-search" style="font-size:25px; color: #C59876;"></i>
+      </form>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center"
+        id="navbarTogglerDemo01">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active fs-5" aria-current="page"
+              href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active ps-5 fs-5" aria-current="page"
+              href="#">Cookware</a>
+          </li> <li class="nav-item">
+            <a class="nav-link active ps-5 fs-5" aria-current="page"
+              href="#">Kitchenware</a>
+          </li> <li class="nav-item">
+            <a class="nav-link active ps-5 fs-5" aria-current="page"
+              href="About.html">About SU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ps-5 text-danger fs-5"
+              aria-current="page" href="#">11.11 sale</a>
+          </li>
+
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center"
-          id="navbarTogglerDemo01">
-          <ul class="navbar-nav ">
-            <li class="nav-item">
-              <a class="nav-link active fs-5" aria-current="page"
-                href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active ps-5 fs-5" aria-current="page"
-                href="#">Cookware</a>
-            </li> <li class="nav-item">
-              <a class="nav-link active ps-5 fs-5" aria-current="page"
-                href="#">Kitchenware</a>
-            </li> <li class="nav-item">
-              <a class="nav-link active ps-5 fs-5" aria-current="page"
-                href="About.html">About SU</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active ps-5 text-danger fs-5"
-                aria-current="page" href="#">11.11 sale</a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
     <div id="carouselExampleControls" class="carousel slide"
       data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -89,162 +92,143 @@
       </button>
     </div>
 
+    <!-- cards -->
 
-
-    
-    <div class="container mt-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/cooker1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NONSTICK-COOKER</h5>
-              <p class="card-text">4 Liter Emerald 2-in-1 Aluminum Pressure Cooker & Karahi/Wok<br>
-                Rs.6,599.00</p>
-              <a href="#" class="btn btn-primary">Shop now</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
-          </div>
+<div class="container mt-5">
+<div class="row">
+  <div class="col-md-4">
+    <article class="card">
+      <img
+        class="card__background"
+        src="images/glass new.jpg"
+        alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+        width="1920"
+        height="2193"
+      />
+      <div class="card__content | flow">
+        <div class="card__content--container | flow">
+          <h2 class="card__title">Glass</h2>
+          <p class="card__description"> 
+            Glass is a versatile material with a wide range of uses, from architecture to art,its and applications are fascinating
+          </p>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/cooker2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NONSTICK-COOKER</h5>
-              <p class="card-text">Shandler Aluminum Pressure Cooker<br>
-                Rs.7,299.00
-                </p>
-              <a href="#" class="btn btn-primary">Shop now</a>
-
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/cooker3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NONSTICK-COOKER</h5>
-              <p class="card-text">Pearl Commercial Pressure Cooker with Aluminum Body & Wide Open Bakelite Handles<br>
-                Rs.9,799.00</p>
-              <a href="#" class="btn btn-primary">Shop now</a>
-
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
-          </div>
-        </div>
+        <button class="card__button">Read more</button>
       </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/frypan1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NONSTICK-FRYPAN</h5>
-              <p class="card-text">Mini Non Stick Marble Coated Black One Egg Frying Pan<br>
-                Rs.650.00</p>
-              <a href="#" class="btn btn-primary">Shop now</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/frypan2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NONSTICK-FRYPAN</h5>
-              <p class="card-text">Mini Non Stick Marble Coated Maroon One Egg Frying Pan<br>
-                Rs.650.00</p>
-              <a href="#" class="btn btn-primary">Shop now</a>
-
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/frypan3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NONSTICK-FRYPAN</h5>
-              <p class="card-text">Mini Non Stick Marble Coated Black One Egg Frying Pan<br>
-                Rs.650.00</p>
-              <a href="#" class="btn btn-primary">Shop now</a>
-
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/tawa1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NONSTICK-GRIDDLE</h5>
-              <p class="card-text">Black Marble Coated Hot Plate<br>
-                Rs.1,799.00</p>
-              <a href="#" class="btn btn-primary">Shop now</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/tawa2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NONSTICK-GRIDDLE</h5>
-              <p class="card-text">30cm Grey Marble Coated Non Stick Signature Chapati Pan<br>
-                Rs.2,999.0</p>
-              <a href="#" class="btn btn-primary">Show now</a>
-
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/tawa3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NONSTICK-GRIDDLE</h5>
-              <p class="card-text">Maroon Marble Coated Hot Plate<br>
-                Rs.1,799.00</p>
-              <a href="#" class="btn btn-primary">Shop now</a>
-
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"></small>
-            </div>
-          </div>
-        </div>
-      </div>
+    </article>
     </div>
+    <div class="col-md-4">
+    <article class="card">
+      <img
+        class="card__background"
+        src="images/m12.jpg"
+        alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+        width="1920"
+        height="2193"
+      />
+      <div class="card__content | flow">
+        <div class="card__content--container | flow">
+          <h2 class="card__title">Marble</h2>
+          <p class="card__description"> 
+            
+Marble utensils are a beautiful and functional addition to any kitchen or dining setting          </p>
+        </div>
+        <button class="card__button">Read more</button>
+      </div>
+    </article>
+    </div>
+    <div class="col-md-4">
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/set3.jpg"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Non-stick</h2>
+            <p class="card__description"> 
+              Nonstick utensils are kitchen tools coated with a special layer that prevents food from sticking, making cooking and cleaning easier
+            </p>
+          </div>
+          <button class="card__button">Read more</button>
+        </div>
+      </article>
+      </div>
+</div>
 
+<div class="row mt-5">
+  <div class="col-md-4">
+    <article class="card">
+      <img
+        class="card__background"
+        src="images/sw4.jpg"
+        alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+        width="1920"
+        height="2193"
+      />
+      <div class="card__content | flow">
+        <div class="card__content--container | flow">
+          <h2 class="card__title">Stoneware</h2>
+          <p class="card__description"> 
+            Stoneware is known for its strength and ability to retain heat, making it a popular choice for various kitchenware.
+          </p>
+        </div>
+        <button class="card__button">Read more</button>
+      </div>
+    </article>
+    </div>
+    <div class="col-md-4">
+    <article class="card">
+      <img
+        class="card__background"
+        src="images/SWS1.webp"
+        alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+        width="1920"
+        height="2193"
+      />
+      <div class="card__content | flow">
+        <div class="card__content--container | flow">
+          <h2 class="card__title">Silicon</h2>
+          <p class="card__description"> 
+            Silicone utensils are kitchen tools made from a flexible, durable, and heat-resistant material known as silicone.
+          </p>
+        </div>
+        <button class="card__button">Read more</button>
+      </div>
+    </article>
+    </div>
+    <div class="col-md-4">
+      <article class="card">
+        <img
+          class="card__background"
+          src="images/set2.jpg"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content--container | flow">
+            <h2 class="card__title">Dinner-set</h2>
+            <p class="card__description"> 
+              Dinner sets are collections of tableware designed for serving meals
+            </p>
+          </div>
+          <button class="card__button">Read more</button>
+        </div>
+      </article>
+      </div>
+</div>
 
+</div>
 
-
+<!-- cards end -->
 
     <footer class="text-center text-lg-start bg-body-tertiary ">
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div class="me-5 d-none d-lg-block ">
-          <span>Get connected with us on social networks:</span>
+          <span></span>
         </div>
         <div>
           <a href="#" class="me-4 text-reset">
@@ -266,6 +250,11 @@
             <i class="fa fa-github" style="font-size:36px;color: black;"></i>
           </a>
         </div>
+
+
+
+
+
       </section>
       <section class="footer-tab">
         <div class="container text-center text-md-start mt-5">
