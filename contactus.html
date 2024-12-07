@@ -13,14 +13,25 @@
   <link rel="stylesheet" href="css/product.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
   <style>
 
-
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #199c08;
+  color: rgb(214, 205, 205);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -29,81 +40,30 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #28ac0e;
 }
 
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #fdf6f6;
   padding: 20px;
 }
 
-
-
-    .dropdown-item:hover {
-      background-color: #3f117cc0 !important;
-      color: white !important;
-    }
-
-    .btn-outline-warning {
-      border: 2px solid white !important;
-      color: white !important;
-    }
-
-    .btn-outline-warning:hover {
-      background-color: transparent !important;
-
-    }
-
-    .gallery-img {
-      width: 100%;
-      height: auto;
-    }
-
-   
-    .tabz {
-      color: #3f117c;
-    }
-
-    .tabz:hover {
-      color: mediumorchid;
-    }
-
-    .card-img-overlay .container-fluid1 .img-fluid {
-      margin-top: -300px !important;
-      color: #000000 !important;
-      width: 100% !important;
-    }
-
-    .page-link {
-      color: #3f117c !important;
-      font-size: 20px !important;
-
-    }
-
-    .bg_pink,
-    .bg_pink1 {
-      background-color: #3f117c !important;
-    }
-
-    .bg_pink:hover {
-      background-color: #ffffff !important;
-    }
-
+ </style>
   </head>
 
 <body>
   
   <nav class="navbar ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="><img src="images/logo.png"
-          height="90vh" alt></a>
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png"
+        height="90vh" alt></a>
 
       <form class="d-flex col-4" role="search">
         <input class="form-control me-2 border border-0 border-bottom border-dark " type="search" placeholder="Search"
           aria-label="Search">
-          <i class="fa fa-search" style="font-size:25px; color: ""></i>
+          <i class="fa fa-search" style="font-size:25px; color: #C59876;"></i>
       </form>
     </div>
   </nav>
@@ -160,29 +120,31 @@ input[type=submit]:hover {
 
 <h1 >
 <p >CONTACT US</p></h1>
-      <div class="container">
-        <form action="action_page.php">
       
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.>
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.>
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">PAKISTAN</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something. style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
 
 
    
@@ -296,6 +258,7 @@ input[type=submit]:hover {
         <a class="text-reset fw-bold text-black" href="index.html"></a><P>2024 SHINNING UTENSILS All rights reserved.</P>
       </div>
     </footer>
+    
     <script>
       window.addEventListener('scroll', function () {
         var navbar = document.getElementById("mainNavbar");
